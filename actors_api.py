@@ -15,6 +15,7 @@ from helpers import add_new_actor, get_all_actors_paginated, get_actor, delete_a
 api_bp = Blueprint('api', __name__, url_prefix='/api/v1')
 
 api = Api(api_bp,
+          default = 'Actors',
           title = 'API for Actors',
           version='1.0',
           description = 'Simple API to provide data service regarding Actors information fetched from TV Maze website')
